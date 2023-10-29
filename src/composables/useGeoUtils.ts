@@ -5,8 +5,9 @@ import L from 'leaflet';
 import { getAssetsImgFile } from '@/utils/tool.ts';
 
 export const useGeoUtils = () => {
-  const getPointListByGeoJson = (geoJson: any) => {
-    return pointList.list.filter((item) =>
+  const getPointListByGeoJson = (geoJson: any): number[][] => {
+    const list = JSON.parse(JSON.stringify(pointList.list));
+    return list.filter((item: number[]) =>
       booleanPointInPolygon(turfPoint(item.reverse()), geoJson)
     );
   };
