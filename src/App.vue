@@ -42,7 +42,7 @@ const modeChange = (type: string) => {
   }
 };
 
-const mapLoad = (map) => {
+const mapLoad = (map: any) => {
   mapObj.value = map;
 
   moveQueryNearbyPoints();
