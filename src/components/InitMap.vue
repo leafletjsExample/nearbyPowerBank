@@ -19,9 +19,9 @@ const mapRef = ref();
 
 const initMap = () => {
   const map = L.map(mapRef.value, {
-    center: [32.0237855, 118.8075675],
-    zoom: 11,
-    minZoom: 6,
+    center: [39.92, 116.4],
+    zoom: 14,
+    minZoom: 0,
     maxZoom: 20
   });
 
