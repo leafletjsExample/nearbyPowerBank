@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 dependencies:
+  '@geoman-io/leaflet-geoman-free':
+    specifier: ^2.14.2
+    version: 2.14.2(leaflet@1.9.4)
   '@turf/turf':
     specifier: ^6.5.0
     version: 6.5.0
@@ -259,6 +262,20 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@geoman-io/leaflet-geoman-free@2.14.2(leaflet@1.9.4):
+    resolution: {integrity: sha512-6lIyG8RvSVdFjVjiQgBPyNASjymSyqzsiUeBW0pA+q41lB5fAg4SDC6SfJvWdEyDHa81Jb5FWjUkCc9O+u0gbg==}
+    peerDependencies:
+      leaflet: ^1.2.0
+    dependencies:
+      '@turf/boolean-contains': 6.5.0
+      '@turf/kinks': 6.5.0
+      '@turf/line-intersect': 6.5.0
+      '@turf/line-split': 6.5.0
+      leaflet: 1.9.4
+      lodash: 4.17.21
+      polygon-clipping: 0.15.3
+    dev: false
 
   /@jridgewell/sourcemap-codec@1.4.15:
     resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
@@ -1698,6 +1715,10 @@ packages:
 
   /leaflet@1.9.4:
     resolution: {integrity: sha512-nxS1ynzJOmOlHp+iL3FyWqK89GtNL8U8rvlMOsQdTTssxZwCXh8N2NB3GDQOL+YR3XnWyZAxwQixURb+FA74PA==}
+    dev: false
+
+  /lodash@4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
     dev: false
 
   /lru-cache@6.0.0:
